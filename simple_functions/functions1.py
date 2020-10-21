@@ -1,7 +1,7 @@
 from functools import lru_cache
 import numpy as np
 
-__all__ = ['my_sum', 'factorial']
+__all__ = ['my_sum', 'factorial', 'my_sin']
 
 
 def my_sum(iterable):
