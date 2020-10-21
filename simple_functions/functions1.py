@@ -1,5 +1,4 @@
 from functools import lru_cache
-import numpy as np
 import math
 
 __all__ = ['my_sum', 'factorial', 'my_sin']
