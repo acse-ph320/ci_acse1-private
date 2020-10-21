@@ -26,12 +26,12 @@ class TestSimpleFunctions(object):
         answer = factorial(number)
         assert answer == expected
 
-    @pytest.mark.parametrize('number, expected', [
-        (0, 0),
-        (np.pi/2, 1),
-        (np.pi/6, 1/2),
+    @pytest.mark.parametrize('number, order, expected', [
+        (0, 20, 0),
+        (np.pi/2, 20, 1),
+        (np.pi/6, 20, 1/2),
     ])
-    def test_my_sin(self, number, expected):
+    def test_my_sin(self, number, order, expected):
         '''Test sin function'''
-        answer = my_sin(number)
-        assert np.isclose(answer, expected, atol=1e-3)
+        answer = my_sin(number, order)
+        assert np.isclose(answer, expected, atol=1e-12)
