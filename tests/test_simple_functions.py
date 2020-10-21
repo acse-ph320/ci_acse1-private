@@ -35,4 +35,3 @@ class TestSimpleFunctions(object):
         '''Test sin function'''
         answer = my_sin(number)
         assert np.isclose(answer, expected, atol=1e-3)
-

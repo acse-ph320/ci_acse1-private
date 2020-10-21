@@ -19,4 +19,3 @@ def factorial(n):
 def my_sin(x):
 
     return(np.sin(x))
-
