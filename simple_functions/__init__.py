@@ -1,5 +1,5 @@
-from .constants import * # noqa
-from .functions1 import * # noqa
+from .constants import *  # noqa
+from .functions1 import my_sum, factorial, my_sin
 
 from pkg_resources import get_distribution, DistributionNotFound
 try:
